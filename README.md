@@ -192,7 +192,7 @@ Status: MATERIAL NEEDED
 ## 8. Resultado Final por MO
 
 | MO | Coverage Source | Status | StatusPN |
-|----|----------------|--------|
+|----|----------------|--------|--------|
 | MO-001 | On Hand WH-A | Cover | On Hand |
 | MO-002 | Transfer WH-B | Cover | On Hand |
 | MO-003 | PO-1001 | Cover with PO | On Track |
