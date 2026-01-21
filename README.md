@@ -191,13 +191,13 @@ Status: MATERIAL NEEDED
 
 ## 8. Resultado Final por MO
 
-| MO | Coverage Source | Status |
+| MO | Coverage Source | Status | StatusPN |
 |----|----------------|--------|
-| MO-001 | On Hand WH-A | Cover |
-| MO-002 | Transfer WH-B | Cover |
-| MO-003 | PO-1001 | Cover with PO |
-| MO-004 | PO-1002 | Out of ETA |
-| MO-005 | None | Material Needed |
+| MO-001 | On Hand WH-A | Cover | On Hand |
+| MO-002 | Transfer WH-B | Cover | On Hand |
+| MO-003 | PO-1001 | Cover with PO | On Track |
+| MO-004 | PO-1002 | Out of ETA | Late |
+| MO-005 | None | Pending | Material Needed |
 
 ---
 
