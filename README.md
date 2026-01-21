@@ -71,59 +71,59 @@ La cobertura se ejecuta siempre en el siguiente orden:
 ## 6. Diagrama Funcional de Cobertura
 
 ```text
-┌──────────────────────┐
-│ Manufacture Order MO │
-│ Pending Qty > 0      │
-└─────────┬────────────┘
-          │
-          ▼
-┌──────────────────────────────┐
-│ On Hand (Same Warehouse)?    │
-└───────┬──────────────────────┘
-        │Yes                    │No
-        ▼                       ▼
- Consume On Hand        Inspect (Same WH)?
-        │                       │
-        ▼                       ▼
- Pending = 0?            Consume Inspect
-        │                       │
-        ▼                       ▼
-     COVER              Pending = 0?
-                                │
-                                ▼
-                             COVER
-                                │
-                                ▼
-                  Other Warehouses Available?
-                                │
-                                ▼
-                        Suggest Transfer
-                                │
-                                ▼
-                       Pending = 0?
-                                │
-                                ▼
-                             COVER
-                                │
-                                ▼
-                      Purchase Orders Available?
-                                │
-                                ▼
-                      ETA vs PRD Validation
-                                │
-                                ▼
-                ┌───────────────┴───────────────┐
-                │                               │
-            On Time                          Late
-                │                               │
-                ▼                               ▼
-        COVER WITH PO                   OUT OF ETA
-                │                               |
-                ▼                               ▼
-        Pending > 0 ?                   Pending > 0 ?
-                │                               |
-                ▼                               ▼       
-        MATERIAL NEEDED                 MATERIAL NEEDED
+                ┌──────────────────────┐
+                │ Manufacture Order MO │
+                │ Pending Qty > 0      │
+                └─────────┬────────────┘
+                          │
+                          ▼
+           ┌──────────────────────────────┐
+           │ On Hand (Same Warehouse)?    │
+           └───────┬──────────────────────┘
+                   │Yes                    │No
+                   ▼                       ▼
+            Consume On Hand        Inspect (Same WH)?
+                   │                       │
+                   ▼                       ▼
+            Pending = 0?            Consume Inspect
+                   │                       │
+                   ▼                       ▼
+                  COVER              Pending = 0?
+                                        │
+                                        ▼
+                                       COVER
+                                        │
+                                        ▼
+                                Other Warehouses Available?
+                                        │
+                                        ▼
+                                Suggest Transfer
+                                        │
+                                        ▼
+                                Pending = 0?
+                                        │
+                                        ▼
+                                       COVER
+                                        │
+                                        ▼
+                                Purchase Orders Available?
+                                        │
+                                        ▼
+                                ETA vs PRD Validation
+                                        │
+                                        ▼
+                        ┌───────────────┴───────────────┐
+                        │                               │
+                     On Time                          Late
+                        │                               │
+                        ▼                               ▼
+                COVER WITH PO                   OUT OF ETA
+                        │                               |
+                        ▼                               ▼
+                Pending > 0 ?                   Pending > 0 ?
+                        │                               |
+                        ▼                               ▼       
+                MATERIAL NEEDED                 MATERIAL NEEDED
 ```
 
 ---
