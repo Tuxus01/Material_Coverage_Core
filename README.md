@@ -118,12 +118,12 @@ La cobertura se ejecuta siempre en el siguiente orden:
                 │                               │
                 ▼                               ▼
         COVER WITH PO                   OUT OF ETA
-                │
-                ▼
-        Pending > 0 ?
-                │
-                ▼
-        MATERIAL NEEDED
+                │                               |
+                ▼                               ▼
+        Pending > 0 ?                   Pending > 0 ?
+                │                               |
+                ▼                               ▼       
+        MATERIAL NEEDED                 MATERIAL NEEDED
 ```
 
 ---
