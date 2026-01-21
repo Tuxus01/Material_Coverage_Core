@@ -228,6 +228,7 @@ Status: MATERIAL NEEDED
 Esta solución **extiende la capacidad de análisis del ERP** y habilita decisiones más rápidas y mejor fundamentadas para cumplir los objetivos de producción.
 
 ## Pivot de Material Coverage por StatusPN
+### Escenario final con datos simulados
 ![Materials by StatusPN](img/MC_Week_Result.png)
 
 ## Keywords
